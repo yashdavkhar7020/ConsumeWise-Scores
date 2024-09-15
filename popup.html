@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsumeWise Popup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 300px;
+        }
+        #container {
+            padding: 20px;
+        }
+        #closeButton {
+            background: #f44336;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            padding: 5px 10px;
+            font-size: 16px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        #content {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button id="closeButton">×</button>
+        <h1>ConsumeWise</h1>
+        <p>Product information will be displayed here.</p>
+        <div id="content">
+            <p><strong>Product Name:</strong> <span id="productName">Loading...</span></p>
+            <p><strong>Health Score:</strong> <span id="healthScore">Loading...</span></p>
+            <p><strong>Price:</strong> <span id="price">Loading...</span></p>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
